@@ -1,0 +1,23 @@
+<div ng-repeat="student in students" class="student row">
+    <div class="col-xs-8">
+        <div class="row">
+            <span class="col-sm-1 col-sm-offset-1">
+                Name:
+            </span>
+            <span class="col-sm-3 ng-cloak">
+                {{student.name}}
+            </span>
+        </div>
+        <div class="row">
+            <span class="col-sm-1 col-sm-offset-1">
+                Age:
+            </span>
+            <span class="col-sm-3 ng-cloak">
+                {{student.age}}
+            </span>
+        </div>
+    </div>
+    <div class="col-xs-4">
+        <a ng-href="#/student/{{student.name}}">Load</a>
+    </div>
+</div>
